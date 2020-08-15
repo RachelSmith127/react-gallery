@@ -1,5 +1,10 @@
+//{Component} is destructuring-
+// it pulls the Component out of the React object imported in
 import React, { Component } from 'react';
 import './App.css';
+import axios from 'axios';
+import GalleryList from '../GalleryList/GalleryList.js'
+import GalleryItem from '../GalleryItem/GalleryItem.js'
 
 class App extends Component {
   render() {
