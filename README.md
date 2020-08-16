@@ -1,9 +1,15 @@
-# Project Name
-
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
+# React Photo Gallery
 
 ## Description
 
-Your project description goes here. What problem did you solve? How did you solve it?
+I built an app to display images with the ability to add likes and toggle between viewing an image and viewing the description for the image. The app also tracks the number of times that an image has been liked. 
 
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+## Built With
+
+I used the following technologies and frameworks: React, Axios, CSS, Node, JSON.
+
+## Acknowledgement
+
+A huge thank you to Prime for teaching me React. Thank you also to Patrick Mazurek for helping me get past some hurdles when building this App! 
+
+
