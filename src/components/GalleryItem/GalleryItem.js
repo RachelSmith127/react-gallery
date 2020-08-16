@@ -16,9 +16,9 @@ class GalleryItem extends Component{
         const image = this.props.image
         return(
             <>
-            <div onClick={this.showAlias}>
+            <div className="container" onClick={this.showAlias}>
          
-            {this.state.imageDescription ? <img src={image.path}/> : <p>{image.description}</p>}
+            {this.state.imageDescription ? <img className="item"src={image.path}/> : <p>{image.description}</p>}
             </div>
             <button onClick={ () => this.props.addLike(image.id)}>Like</button>
             <p>{image.likes}People that liked this photo:</p>

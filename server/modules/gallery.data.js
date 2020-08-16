@@ -1,6 +1,6 @@
 const galleryItems = [
     { id: 1, path: 'images/18861_236582638380_7248116_n.jpg', description: 'Coper Mountain.', likes: 0 },
-    { id: 2, path: 'images/774124_10151262165633381_572771275_o.jpg', description: 'Me and Joe getting ready to shred it up!', likes: 0 },
+    { id: 2, path: 'images/774124_10151262165633381_572771275_o.jpg', description: 'Getting ready to shred it up!', likes: 0 },
     { id: 3, path: 'images/1013671_10151415768991933_1947433811_n.jpg', description: 'Sisters.', likes: 0 },
     { id: 4, path: 'images/1502900_10202364675949679_1570300664_o.jpg', description: 'Trav proposing to me.', likes: 0 },
     { id: 5, path: 'images/10441257_10152541288619583_5137481457547934655_n.jpg', description: 'Scaring Craig on a Jet ski.', likes: 0 },
