@@ -7,6 +7,7 @@ import GalleryList from '../GalleryList/GalleryList.js'
 import GalleryItem from '../GalleryItem/GalleryItem.js'
 
 class App extends Component {
+  //defining state and array with an object
   state = {
 
     galleryList: [
@@ -19,10 +20,13 @@ class App extends Component {
     ]
   }
 
+  //like document.ready
   componentDidMount(){
+  //do initial get request
     this.getGallery();
   }
 
+  // this is our get request we are grabbing our data and storing it in `App.js`
   getGallery = () => {
     axios.get('/gallery')
     .then(response => {
@@ -35,6 +39,7 @@ class App extends Component {
    
   }
 
+  // - When the like button is clicked, `Axios` is updating (`PUT`) the like count `/gallery/like/:id`.
   addLike = (id) => {
     axios.put(`/gallery/like/${id}`)
     .then((response) => {
