@@ -30,6 +30,7 @@ class App extends Component {
   getGallery = () => {
     axios.get('/gallery')
     .then(response => {
+      //response.data is where our data lives
       this.setState({
         galleryList:response.data
       })
@@ -45,7 +46,7 @@ class App extends Component {
     axios.put(`/gallery/like/${id}`)
     .then((response) => {
       this.getGallery();
-      //this will display an error if we have one.
+      //catch will display an error if we have one.
     }).catch(error => {
       alert('error in put')
     })
@@ -61,6 +62,7 @@ class App extends Component {
         </header>
         <br/>
         {/* working with put request to store number of likes */}
+        {/*Makes this.props.listOfImages IN GalleryList component*/}
         <GalleryList listOfImages={this.state.galleryList}
         addLike={this.addLike}/>
       </div>
