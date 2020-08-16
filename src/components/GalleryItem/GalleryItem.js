@@ -21,7 +21,7 @@ class GalleryItem extends Component{
             {this.state.imageDescription ? <img className="item"src={image.path}/> : <p>{image.description}</p>}
             </div>
             <button onClick={ () => this.props.addLike(image.id)}>Like</button>
-            <p>{image.likes}People that liked this photo:</p>
+            <p>{image.likes} : Total Likes</p>
             
             </>
 
